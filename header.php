@@ -1,8 +1,8 @@
-<!doctype html>
+<!Doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Awesome Theme</title>
+		<title>Dina Vejling</title>
 		<?php wp_head(); ?>
 	</head>
 	
@@ -34,7 +34,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a class="navbar-brand" href="#">Awesome Theme</a>
+					      <a class="navbar-brand" href="#">Dina Vejling</a>
 					    </div>
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<?php 

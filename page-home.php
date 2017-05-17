@@ -1,4 +1,4 @@
-<?php get_header 
+<?php get_header ();
     
  /*
 	Template Name: Home
@@ -9,4 +9,4 @@
    
   
  
-<?php get_footer ?>
+<?php get_footer(); ?>
