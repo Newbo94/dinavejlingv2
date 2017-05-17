@@ -1,6 +1,5 @@
 
 
-/* comment */ 
 
 <?php
 /*
