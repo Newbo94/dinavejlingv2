@@ -7,8 +7,7 @@
 	</div><!-- .container -->
 	
 	<?php wp_footer(); ?>
-	
-	<p>tesst</p>
+
 	
 	</body>
 </html>
