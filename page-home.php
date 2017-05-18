@@ -15,7 +15,7 @@
         <div class="colum-lg-12">
     
     
-    <img src="" alt="">
+    <img src="" alt="Los Angeles">
     
     
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
