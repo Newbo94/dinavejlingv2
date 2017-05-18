@@ -1,117 +1,60 @@
-<?php
-/* Main page with two forms: sign up and log in */
+<?php get_header ();
 
-/* Template Name: presse */
-require 'presssite_sub_pages/db.php';
-session_start();
-?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sign-Up/Login Form</title>
-  <?php include 'css/css.html'; ?>
-</head>
+ /*
+	Template Name: Home
+*/
 
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-    if (isset($_POST['login'])) { //user logging in
+    ?>
+    <div class="container">
+    <div class="row">
+        <div class="colum-lg-12">
 
-        require 'presssite_sub-pages/login.php';
 
-    }
+    <img src="" alt="Los Angeles">
 
-    elseif (isset($_POST['register'])) { //user registering
 
-        require 'presssite_sub-pages/register.php';
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-    }
-}
-?>
-<body>
-  <div class="form">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="    https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg
+" alt="Los Angeles">
+    </div>
 
-      <ul class="tab-group">
-        <li class="tab"><a href="#signup">Sign Up</a></li>
-        <li class="tab active"><a href="#login">Log In</a></li>
-      </ul>
+    <div class="item">
+      <img src="    https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg
+" alt="Chicago">
+    </div>
 
-      <div class="tab-content">
+    <div class="item">
+      <img src="  https://static.pexels.com/photos/115045/pexels-photo-115045.jpeg
+" alt="New York">
+    </div>
+  </div>
 
-         <div id="login">
-          <h1>Welcome Back!</h1>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div
 
-          <form action="index.php" method="post" autocomplete="off">
-
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email" required autocomplete="off" name="email"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password" required autocomplete="off" name="password"/>
-          </div>
-
-          <p class="forgot"><a href="forgot.php">Forgot Password?</a></p>
-
-          <button class="button button-block" name="login" />Log In</button>
-
-          </form>
-
+    </div>
         </div>
+</div>
 
-        <div id="signup">
-          <h1>Sign Up for Free</h1>
 
-          <form action="index.php" method="post" autocomplete="off">
 
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" name='firstname' />
-            </div>
 
-            <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off" name='lastname' />
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off" name='email' />
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off" name='password'/>
-          </div>
-
-          <button type="submit" class="button button-block" name="register" />Register</button>
-
-          </form>
-
-        </div>
-
-      </div><!-- tab-content -->
-
-</div> <!-- /form -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script src="js/index.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>
