@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Dina Vejling</title>
+		<title>Dina Vejling <?php wp_title(); ?></title>
 		<?php wp_head(); ?>
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
+		
 	</head>
 	
 	<?php 
@@ -20,39 +22,27 @@
 		
 		<div class="container">
 		
-		<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Dina Vejling</a>
-  </div>
+		<nav role="navigation">
+                
+<div class="navbar navbar-inverse navbar-fixed-left">
+  
+<div class="flex-justify">
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#"></a>
-     
-			    <?php 
+	    <?php 
 								wp_nav_menu(array(
 									'theme_location' => 'primary',
 									'container' => false,
-									'menu_class' => 'nav navbar-nav navbar-right'
+									'menu_class' => 'nav navbar-nav '
 									)
 								);
 							?>
-  
-  </li>
-  
-    </ul>
-  
-   
-  </div><!-- /.navbar-collapse -->
-</nav>
+  </div>
+<img class="navbar-brand" src="wp-content/uploads/2017/05/icon.svg"></img>
+</div>
+
+
 				
 			</div>
 			
+		 
+
