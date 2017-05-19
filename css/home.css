@@ -2,6 +2,13 @@
 
 
 height: 100vh !important;
-    width:100%;
+width: 100% !important;
+
     }
 
+
+.carousel-inner .item  img{
+  object-fit: cover !important;
+  height: 100% !important;
+      width: 100%;
+    }
