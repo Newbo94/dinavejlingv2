@@ -7,6 +7,8 @@
 	</div><!-- .container -->
 	
 	<?php wp_footer(); ?>
+	
+	<!--hej-->
 
 	
 	</body>
