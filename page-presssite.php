@@ -1,7 +1,7 @@
 <?php get_header ();
 
  /*
-	Template Name: Home
+	Template Name: Press
 */
 
     ?>
