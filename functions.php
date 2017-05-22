@@ -13,15 +13,16 @@ wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min
 
     wp_enqueue_style('headercss', get_template_directory_uri() . '/css/header.css', array(), '1.0.1', 'all');
 
-
     wp_enqueue_style('footercss', get_template_directory_uri() . '/css/footer.css', array(), '1.0.0', 'all');
 
     wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', array(), '1.0.2', 'all');
 
-    wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0.0', 'all');
+		wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0.0', 'all');
 
-		    wp_enqueue_style('kontakt', get_template_directory_uri() . '/css/kontakt.css', array(), '1.0.0', 'all');
-				/* 1.0.0 = den version af css, man kan evt ændre det sidste 0, for at fortælle den at der er en ny funktion*/
+		 wp_enqueue_style('kontakt', get_template_directory_uri() . '/css/kontakt.css', array(), '1.0.0', 'all');
+		 wp_enqueue_style('gallery', get_template_directory_uri() . '/css/gallery.css', array(), '1.0.0', 'all');
+
+/* 1.0.0 = den version af css, man kan evt ændre det sidste 0, for at fortælle den at der er en ny funktion*/
 
 	//js
 
