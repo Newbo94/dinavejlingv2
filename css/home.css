@@ -1,14 +1,47 @@
 #myCarousel {
 
 
-height: 100vh !important;
-width: 100% !important;
+height: 100vh;
+width: 100%;
 
     }
 
 
 .carousel-inner .item  img{
-  object-fit: cover !important;
-  height: 100% !important;
+  object-fit: cover;
+  height: 100%;
       width: 100%;
     }
+
+
+.position-re {
+  position: relative;
+}
+
+.position-ab {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+.carousel-indicators li {
+ border-radius: 0;
+ height: 1px;
+ width: 50px;
+ color: #ffffff;
+}
+
+
+
+.carousel-indicators .active {
+  height: 1px;
+  border-radius: 0;
+  height: 1px;
+  width: 50px;
+  color: #A8A8A8;
+}
+
+.carousel-indicators {
+  text-align: right;
+
+}
