@@ -21,17 +21,17 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="    http://justwebwork.dk/dina/img/Backgroundimg.png
+      <img src="   <?php the_field('image_slider_1'); ?>
 " alt="Los Angeles">
     </div>
 
     <div class="item">
-      <img src="    http://justwebwork.dk/dina/img/Backgroundimg.png
+      <img src="    <?php the_field('image_slider_2'); ?>
 " alt="Chicago">
     </div>
 
     <div class="item">
-      <img src="  http://justwebwork.dk/dina/img/Backgroundimg.png
+      <img src="  <?php the_field('image_slider_3'); ?>
 " alt="New York">
     </div>
   </div>
@@ -41,19 +41,36 @@
     </div>
         </div>
 
-
+</div> <!----- container-fluid poistion-re------>
 
 <div class="container position-ab">
   <div class="row">
-    <div class="col-offset-md-1 col-md-6">
+    <div class="col-sm-offset-2 col-md-6">
 <div class="main-logo">
-<img src="http://justwebwork.dk/dina/img/dina_vejling_logo.svg" alt="dina vejlign logo ">
+<img src="<?php the_field('home_header_logo'); ?>" alt="dina vejlign logo ">
 </div>
 </div>
+</div>
+</div> <!---- Container position-ab ----->
+
+
+<div class="container position-ab">
+
+<div class="adress_text row">
+
+<div class="col-sm-offset-2 col-md-2">
+
+<h3> <?php the_field('adresse_textbox'); ?> </h3>
+
+
+
+</div>
+
+
 </div>
 </div>
 
-</div>
+
 
 
 

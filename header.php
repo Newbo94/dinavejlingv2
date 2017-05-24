@@ -18,7 +18,7 @@
 
 	?>
 
-	<body <?php body_class( $awesome_classes ); ?>>
+	<body <?php body_class( $dina_classes ); ?>>
 
 		<div class="container">
 
