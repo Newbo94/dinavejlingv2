@@ -20,7 +20,17 @@ width: 100%;
 
 .position-ab {
   position: absolute;
-  top: 0;
+}
+
+
+.position-top {
+top: 30px;
+left: 0;
+}
+
+.position-bottom {
+bottom: 0;
+left: 0;
 }
 
 .carousel-indicators li {
@@ -45,4 +55,29 @@ width: 100%;
 .carousel-indicators {
   text-align: right;
 
+}
+
+.adress_text > div > h3 {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.front_social_media_img {
+  width: 25px;
+
+}
+
+
+.front_social_media > h3 {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+
+.front_social_media {
+display: flex;
+align-items: baseline;
+justify-content: space-between;
 }
