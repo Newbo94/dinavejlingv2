@@ -26,19 +26,27 @@
 
 }
 
+
+#toggle-button {
+  margin-top: 20px;
+}
+
 @media only screen and (max-width:900px) {
    .toggle-button {
      display: block;
+
    }
 }
+
+#button-close {
+  display: none;
+}
+
 
 .navbar {
       display: flex;
       justify-content: center;
 }
-
-
-
 
 
 #menu-main-navigation {
@@ -59,6 +67,10 @@ flex-direction: column;
   padding-left: 160px ;
 }
 
+
+
+
+
 .navbar-inverse {
 background-color: #fff ;
 border-radius: 0px ;
@@ -67,6 +79,8 @@ border-color: #fff;
 -moz-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
 box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
 }
+
+
 
 
 
@@ -79,6 +93,27 @@ box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
 
 .navbar-inverse .navbar-nav>li>a:hover{
   color:#9C2A29;
+}
+
+@media only screen and (max-width:900px) {
+   .navbar-fixed-left {
+      width: 100%;
+
+   }
+}
+
+@media only screen and (max-width: 900px) {
+.navbar-inverse .navbar-nav>li>a {
+      transform: rotate(0deg);
+      text-align: center;
+}
+}
+
+
+@media only screen and (max-width: 900px) {
+  #menu-main-navigation {
+    margin-top: 50px;
+  }
 }
 
 .flex-justify {
@@ -96,7 +131,7 @@ border-radius: 1px;
 }
 
 
-#toggle-button {
+#toggle-button, #button-close {
   position: absolute;
   z-index: 2;
 height: 50px;
