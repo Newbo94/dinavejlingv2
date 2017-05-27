@@ -33,7 +33,7 @@
 
 <div class=" gallery-wrap">
 <h3>Info</h3>
-<p> Dina Vejling · Dansk <br> kunsthåndværk <br>
+<p> Dina Vejling · Dansk <br> kunsthåndværk <br> <br>
 	Brandts Passage 28<br>
 	5000 Odense C
 

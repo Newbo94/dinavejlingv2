@@ -1,54 +1,103 @@
+
+
+.toggle-nav {
+  display: block;
+}
+
+@media only screen and (max-width:900px)  {
+  .toggle-nav {
+    display: none;
+  }
+}
+
 .navbar-fixed-left {
-  width: 80px !important;
-  position: fixed !important;
+  width: 80px;
+  position: fixed ;
+  height: 100% ;
+  z-index: 1;
+  left: 0;
 
-  height: 100% !important;
-    position: fixed !important;
-    z-index: 1;
-    left: 0;
+}
 
+
+
+.toggle-button {
+  display: none;
+
+}
+
+@media only screen and (max-width:900px) {
+   .toggle-button {
+     display: block;
+   }
+}
+
+.navbar {
+      display: flex;
+      justify-content: center;
+}
+
+
+
+
+
+#menu-main-navigation {
+  display: flex;
+justify-content: space-between;
+flex-direction: column;
 }
 
 .navbar-fixed-left .navbar-nav > li {
-  float: none !important;  /* Cancel default li float: left */
+  float: none ;  /* Cancel default li float: left */
+  height: 100px;
 
-  width: 100px!important;
-margin-top: 100% !important;
+
 }
-
-
-
 
 
 .navbar-fixed-left + .container {
-  padding-left: 160px !important;
+  padding-left: 160px ;
 }
 
 .navbar-inverse {
-    background-color: #fff !important;
-    border-radius: 0px !important;
-border-color: #fff !important;
--webkit-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) !important;
--moz-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) !important;
-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) !important;
+background-color: #fff ;
+border-radius: 0px ;
+border-color: #fff;
+-webkit-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
+-moz-box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
+box-shadow: 5px 0px 6px 0px rgba(0,0,0,0.2) ;
 }
 
 
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #555555 !important;
-    transform: rotate(-90deg) !important;
-    text-transform: uppercase !important;
-        padding: 0 !important;
-    margin: 0 !important; }
+    color: #555555 ;
+   transform: rotate(-90deg) ;
+    text-transform: uppercase ;
+    padding: 0 ;
+    margin: 0 ; }
 
+.navbar-inverse .navbar-nav>li>a:hover{
+  color:#9C2A29;
+}
 
 .flex-justify {
-    display: flex !important;
-    justify-content: center !important;
+    display: flex ;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+.icon-bar {
+  display: block;
+width: 22px;
+height: 2px;
+border-radius: 1px;
+    background-color: #888;
 }
 
 
-.navbar-brand {
-  margin-top: 80%;
+#toggle-button {
+  position: absolute;
+  z-index: 2;
+height: 50px;
 }
