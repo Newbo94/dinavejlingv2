@@ -1,11 +1,36 @@
-hr {
+.gallery_hr {
   background-color: #9C2A29;
-  height: 1.5px;
-  width: 70%;
+  height: 1px;
+  width: 80%;
 
 }
 
 
 .twoJGalleryCSSwrap {
   display: none;
+}
+
+
+.gallery_content {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+.gallery-wrap h3 {
+  color: #fff;
+  font-weight: semibold;
+  font-size: 18px;
+}
+
+.gallery-wrap p {
+  color: #fff;
+      font-weight: 300;
+
+}
+
+.gallery-wrap {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }

@@ -8,7 +8,6 @@
 
 ?>
 
-<hr>
 
 
 <?php
@@ -17,10 +16,10 @@ if( have_posts() ):
 
   while( have_posts() ): the_post(); ?>
 
-    <p><?php the_content(); ?></p>
+    <div class="gallery_content"><?php the_content(); ?></div>
 
 
-
+<hr class="gallery_hr">
   <?php endwhile;
 
 endif;

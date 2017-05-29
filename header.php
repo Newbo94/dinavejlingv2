@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Dina Vejling <?php wp_title(); ?></title>
+		<title><?php wp_title(); ?> | Dina Vejling - Dansk kunsthåndværk </title>
 		<?php wp_head(); ?>
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	</head>
 
 

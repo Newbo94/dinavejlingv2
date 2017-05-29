@@ -1,3 +1,6 @@
+/* Carousel styling */
+
+
 #myCarousel {
 
 
@@ -14,24 +17,8 @@ width: 100%;
     }
 
 
-.position-re {
-  position: relative;
-}
-
-.position-ab {
-  position: absolute;
-}
 
 
-.position-top {
-top: 30px;
-left: 0;
-}
-
-.position-bottom {
-bottom: 0;
-left: 0;
-}
 
 .carousel-indicators li {
  border-radius: 0;
@@ -54,13 +41,45 @@ left: 0;
 
 .carousel-indicators {
   text-align: right;
+  width: 75%;
 
 }
+
+@media screen and (max-width: 900px) {
+.carousel-indicators {
+  display: none;
+
+}
+}
+
+/* Container og content på forsiden */
+
+.position-re {
+  position: relative;
+}
+
+.position-ab {
+  position: absolute;
+}
+
+
+.position-top {
+top: 30px;
+left: 0;
+}
+
+.position-bottom {
+bottom: 0;
+left: 0;
+}
+
+
 
 .adress_text > div > h3 {
   font-size: 15px;
   color: #ffffff;
   font-weight: 300;
+  line-height: 125%;
 }
 
 .front_social_media_img {
@@ -73,11 +92,32 @@ left: 0;
   font-size: 15px;
   color: #ffffff;
   font-weight: 300;
-}
 
+}
 
 .front_social_media {
 display: flex;
-align-items: baseline;
 justify-content: space-between;
+align-items: center;
+}
+
+.social_media_con {
+  right: 0;
+}
+
+@media only screen and (max-width: 900px) {
+.front_social_media h3 {
+  display: none;
+}
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.social_media_con{
+  display: flex;
+  justify-content: flex-end;
+}
+
 }
