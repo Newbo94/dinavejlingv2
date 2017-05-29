@@ -21,6 +21,8 @@ wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min
 		 wp_enqueue_style('kontakt', get_template_directory_uri() . '/css/kontakt.css', array(), '1.0.0', 'all');
 		 wp_enqueue_style('gallery', get_template_directory_uri() . '/css/gallery.css', array(), '1.0.0', 'all');
 
+		 wp_enqueue_style('presscss', get_template_directory_uri() . '/css/presssite.css', array(), '1.0.1', 'all');
+
 /* 1.0.0 = den version af css, man kan evt ændre det sidste 0, for at fortælle den at der er en ny funktion*/
 
 	//js

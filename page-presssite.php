@@ -10,7 +10,7 @@ display: none block; !important
 <?php get_header();
 
  /*
-	Template Name: Press
+	Template Name:
 */
 
 ?>
