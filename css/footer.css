@@ -75,6 +75,18 @@ border-radius:100px;
   display: none;
 }
 
+.gallery-wrap h3 {
+  color: #fff;
+  font-weight: semibold;
+  font-size: 18px;
+}
+
+.gallery-wrap p {
+  color: #fff;
+      font-weight: 300;
+
+}
+
 
 .copyright {
   font-size: 11px;
