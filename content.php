@@ -1,28 +1,28 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-	<header class="entry-header">
-		<?php the_title( sprintf('<h1 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ),'</a></h1>' ); ?>
-		<small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
-	</header>
-	
-	<div class="row">
-		
-		<?php if( has_post_thumbnail() ): ?>
-		
-			<div class="col-xs-12 col-sm-4">
-				<div class="thumbnail"><?php the_post_thumbnail('medium'); ?></div>
-			</div>
-			<div class="col-xs-12 col-sm-8">
-				<?php the_content(); ?>
-			</div>
-		
-		<?php else: ?>
-		
-			<div class="col-xs-12">
-				<?php the_content(); ?>
-			</div>
-		
-		<?php endif; ?>
-	</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="blogkasse">
+        <!-- Henter billedet, som tilføjes i Wordpress - Linker til single page for hvert blogindlæg -->
+        <a href="<?php the_permalink(); ?>" class="center-block bloglink">
+            <img src="<?php the_field('blog_post_img'); ?>" alt="">
+        </a>
+        
+        <!-- Henter datoen, som tilføjes i Wordpress -->
+        <p class="blog-post-meta blogdato"><?php the_field('blog_post_date'); ?></p>
 
-</article>
+        <header class="entry-header">
+            <!-- Henter titlen, som tilføjes i Wordpress - Linker til single page for hvert blogindlæg -->
+            <a href="<?php the_permalink(); ?>" class="center-block bloglinktitle">
+                <h3 class="blog-post-title blognavn"><?php the_title(); ?></h3>
+            </a>
+            
+            <hr class="blog_hr">
+        </header>
+
+        <div class="blogtekst">
+            <!-- Henter tekstinholdet, som tilføjes i Wordpress -->
+            <?php the_content(); ?>
+        </div>
+        
+        <!-- Linker til single page for hvert blogindlæg -->
+        <a href="<?php the_permalink(); ?>" class="center-block bloglink">Læs mere</a>
+    </div>
+</div>
