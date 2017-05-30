@@ -1,0 +1,322 @@
+/* PAGE - BLOGGEN*/
+
+/*Blog forside*/
+.blog {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.blog h1 {
+    font-size: 72px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.blog hr {
+    width: 110px;
+    height: 3px;
+}
+
+.blog_hr {
+    background-color: #9C2A29;
+}
+
+.blogkasse {
+    margin: 18px 0 30px 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 0;
+}
+
+.blogkasse img {
+    width: 100%;
+}
+
+.blogdato {
+    text-align: center;
+    color: #555555;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+.blognavn {
+    font-size: 20px;
+    color: #555555;
+    text-align: center;
+}
+
+.bloglinktitle {
+    text-decoration: none;
+}
+
+.bloglinktitle:hover {
+    text-decoration: none;
+}
+
+.blogkasse hr {
+    width: 158px;
+    height: 1px;
+    margin-top: 15px;
+}
+
+.blogtekst {
+    color: #95989A;
+    margin: 20px 35px;
+    font-weight: lighter;
+    font-size: 15px;
+    height: 250px;
+    overflow: scroll;
+}
+
+.bloglink {
+    text-decoration: none;
+    color: #555555;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.bloglink:hover {
+    color: #9C2A29;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* PAGE - SINGLE BLOG */
+.single {
+    background-color: #F0F0F0;
+}
+
+.single hr {
+    height: 2px;
+    border: none;
+    width: 33%;
+}
+
+
+/* Single page - sektion 1 */
+.single_firstsection {
+    text-align: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single_overlay {
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.5);
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.single_firstsection h1 {
+    width: 100%;
+    color: #ffffff;
+    font-size: 72px;
+}
+
+@media only screen and (max-width : 750px) {
+    .single_firstsection h1 {
+        font-size: 39px;
+    }
+}
+
+.single_firstsection p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width : 750px) {
+    .single_firstsection p {
+        font-weight: 100;
+    }
+}
+
+
+/* Single page - sektion 2 */
+.single_secondsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.single_imgleft img {
+    display: block;
+    width: 430px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.single_imgright img {
+    display: block;
+    width: 430px;
+    height: 560px;
+    object-fit: cover;
+}
+
+/* Til siden er responsiv */
+@media only screen and (max-width : 750px) {
+    .single_imgright img {
+        display: none;
+    }
+}
+
+/* Til siden er responsiv */
+@media only screen and (max-width : 750px) {
+    .single_imgleft img {
+        display: none;
+    }
+}
+
+.single_boks1 {
+    position: absolute;
+    background-color: #D5CCC4;
+    width: 380px;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+}
+
+/* Til siden er responsiv */
+@media only screen and (max-width : 750px) {
+    .single_boks1 {
+        position: inherit;
+    }
+}
+
+.single_boksoverskrift1 {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.single_bokstekst1 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.single_sociale1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+/* Single page - sektion 3 */
+.single_thirdsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.single_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_right {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.single_boks2 {
+    width: 380px;
+    padding: 0 35px;
+}
+
+.single_boksoverskrift2 {
+    font-size: 45px;
+    color: #363636;
+}
+
+.single_bokstekst2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #363636;
+}
+
+.single_img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_img2 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Single page - sektion 4 */
+.single_fourthsection {
+    background-color: #ffffff;
+}
+
+.single_fourthcontent {
+    padding: 48px 0
+}
+
+.single_moreoverskrift {
+    font-weight: bold;
+    font-size: 17px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.single_more {
+    margin: 18px 5px 30px 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 25px 45px;
+    background-color: #D5CCC4;
+}
+
+.single_more a {
+    text-decoration: none;
+}
+
+.single_more a:hover > h3 {
+    text-decoration: none;
+    color: #9C2A29;
+}
+
+.single_more h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.single_more p {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+
+
+
+/* PAGE - BUTIKKEN */
+.butikken_overlay {
+    height: 100vh;
+    background-color: rgba(85, 85, 85, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Til siden er responsiv */
+@media only screen and (max-width : 750px) {
+    .butikken_overlay img {
+        max-width: 275px;
+    }
+}
