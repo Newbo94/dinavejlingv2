@@ -1,3 +1,8 @@
+<?php get_header();
+/*
+ Template Name: reset
+*/
+?>
 <?php
 /* The password reset form, the link to this page is included
    from the forgot.php email message
@@ -25,15 +30,7 @@ else {
     header("location: error.php");
 }
 ?>
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Nustill password</title>
-  <?php include 'css/css.html'; ?>
-</head>
 
-<body>
     <div class="form">
 
           <h1 id="presse-h1">Vælg nyt password</h1>
@@ -63,8 +60,4 @@ else {
           </form>
 
     </div>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/index.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>

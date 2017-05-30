@@ -1,3 +1,8 @@
+<?php get_header();
+/*
+ Template Name: profile
+*/
+?>
 <?php
 /* Displays user information and some useful messages */
 require 'db.php';
@@ -13,21 +18,11 @@ else {
     $first_name = $_SESSION['first_name'];
     $last_name = $_SESSION['last_name'];
     $email = $_SESSION['email'];
-    
+
 }
 ?>
 
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Velkommen til din profil</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <?php include 'css/css.html'; ?>
-</head>
-
-<body>
-  <div class="row">
+<div class="row">
     <div class="presse-container container-fluid">
 
         <div class="wrapper-form col-md-4 col-sm-8 col-xs-11" id="profile">
@@ -64,9 +59,4 @@ else {
     </div>
 
     </div>
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/index.js"></script>
-
-</body>
-</html>
+<?php get_footer(); ?>

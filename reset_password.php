@@ -1,3 +1,8 @@
+<?php get_header();
+/*
+ Template Name: reset-password
+*/
+?>
 <?php
 /* Password reset process, updates database with new user password */
 require 'db.php';
@@ -32,3 +37,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 }
 ?>
+<?php get_footer(); ?>

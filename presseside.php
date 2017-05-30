@@ -30,32 +30,9 @@ else {
     $active = $_SESSION['active'];
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Presse side</title>
-</head>
 
-<body>
-
-<div class="filter-menu">
-
-   <hr>
-
-</div>
 
 <section class="presse-image-gallery">
-
-<style>
-nav{
-  display: none block; !important
-}
-footer{
-display: none block; !important
-}
-</style>
-
-
 
 <?php
 
@@ -78,14 +55,6 @@ endif;
 
 ?>
 
-
-
-
-
-
 </section>
 
-
-</body>
-</html>
 <?php get_footer(); ?>

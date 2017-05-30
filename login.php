@@ -4,6 +4,7 @@
 */
 ?>
 
+
 <?php require 'db.php';
 
 
@@ -52,13 +53,6 @@ else { // User exists
 ?>
 
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Presse log ind - Dina Vejling</title>
-</head>
-<body>
 <div class="row">
     <div class="presse-container container-fluid">
 
@@ -89,30 +83,7 @@ else { // User exists
           </form>
 
         </div>
-        </div>
     </div>
-
-</body>
-
-<?php
-
-if( have_posts() ):
-
-  while( have_posts() ): the_post(); ?>
-
-  <p><?php the_content(); ?></p>
-
-
-
-
-
-  <?php endwhile;
-
-endif;
-
-
-?>
-
-
+</div>
 
 <?php get_footer(); ?>

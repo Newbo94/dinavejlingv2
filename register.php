@@ -96,12 +96,6 @@ mail( $to, $subject, $message_body );
 }
 }
 ?>
-<!DOCTYPE html>
-    <html>
-    <head>
-      <title>Formular presse log ind - Dina Vejling</title>
-    </head>
-    <body>
 <div class="row">
     <div class="presse-container container-fluid">
 
@@ -150,29 +144,8 @@ mail( $to, $subject, $message_body );
           </form>
 
         </div>
-        </div>
-        </div>
-
-</body>
-
-<?php
-
-if( have_posts() ):
-
-  while( have_posts() ): the_post(); ?>
-
-  <p><?php the_content(); ?></p>
-
-
-
-
-
-  <?php endwhile;
-
-endif;
-
-
-?>
+    </div>
+</div>
 
 
 
