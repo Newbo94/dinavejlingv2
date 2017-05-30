@@ -74,7 +74,12 @@
 
 </div>
 
-
+<div id="footer-sidebar1">
+<?php
+if(is_active_sidebar('footer-sidebar-1')){
+dynamic_sidebar('footer-sidebar-1');
+}
+?>
 				</div> <!---row end --->
 
 				<p class="copyright">  	&copy; 2017 Dina Vejling - Dansk Kunsthåndværk All rights reserved. </p>

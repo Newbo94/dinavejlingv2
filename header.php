@@ -1,7 +1,7 @@
 <!Doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 	<head>
-		<meta charset="utf-8">
+		 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<title><?php wp_title(); ?> | Dina Vejling - Dansk kunsthåndværk </title>
 		<?php wp_head(); ?>
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
@@ -45,7 +45,11 @@
 
 <!--- Navigation buttons -->
 <div class="toggle-button">
-<svg id="toggle-button" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.3 64.3"><defs><style>.cls-1{fill:none;stroke:#555;stroke-width:2px;}.cls-2{fill:#555;}</style></defs><title>toggle-icon</title><g id="Group_2577" data-name="Group 2577"><path id="Path_574" data-name="Path 574" class="cls-1" d="M32.15,1A31.15,31.15,0,1,1,1,32.15H1A31.15,31.15,0,0,1,32.15,1Z" transform="translate(0)"/><g id="Group_2576" data-name="Group 2576"><path id="Rectangle_3773" data-name="Rectangle 3773" class="cls-2" d="M18,22.5H45.26a1.5,1.5,0,0,1,1.5,1.5h0a1.5,1.5,0,0,1-1.5,1.5H18A1.5,1.5,0,0,1,16.5,24h0A1.5,1.5,0,0,1,18,22.5Z" transform="translate(0)"/><path id="Rectangle_3774" data-name="Rectangle 3774" class="cls-2" d="M18,30.5H45.26a1.5,1.5,0,0,1,1.5,1.5h0a1.5,1.5,0,0,1-1.5,1.5H18A1.5,1.5,0,0,1,16.5,32h0A1.5,1.5,0,0,1,18,30.5Z" transform="translate(0)"/><path id="Rectangle_3775" data-name="Rectangle 3775" class="cls-2" d="M18,38.5H45.26a1.5,1.5,0,0,1,1.5,1.5h0a1.5,1.5,0,0,1-1.5,1.5H18A1.5,1.5,0,0,1,16.5,40h0A1.5,1.5,0,0,1,18,38.5Z" transform="translate(0)"/></g></g></svg>
+
+<svg id="toggle-button" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.18 47.18"><defs><style>.cls-1{fill:#d5ccc4;}.cls-2{fill:#fff;}</style></defs><title>hamburger_menu</title><circle class="cls-1" cx="23.59" cy="23.59" r="23.59"/><path class="cls-2" d="M14.3,16h19a1.3,1.3,0,0,1,1.3,1.3h0a1.3,1.3,0,0,1-1.3,1.3h-19A1.3,1.3,0,0,1,13,17.3h0A1.3,1.3,0,0,1,14.3,16Z" transform="translate(0 0)"/><path class="cls-2" d="M14.3,21.94h19a1.3,1.3,0,0,1,1.3,1.3h0a1.3,1.3,0,0,1-1.3,1.3h-19a1.3,1.3,0,0,1-1.3-1.3h0A1.3,1.3,0,0,1,14.3,21.94Z" transform="translate(0 0)"/><path class="cls-2" d="M14.3,27.88h19a1.3,1.3,0,0,1,1.3,1.3h0a1.3,1.3,0,0,1-1.3,1.3h-19a1.3,1.3,0,0,1-1.3-1.3h0A1.3,1.3,0,0,1,14.3,27.88Z" transform="translate(0 0)"/></svg>
+
+
+
 </div>
 
 
