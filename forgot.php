@@ -1,4 +1,8 @@
-<?php
+<?php get_header();
+/*
+ Template Name: forgot
+*/
+?><?php
 /* Reset your password form, sends reset.php password link */
 require 'db.php';
 
@@ -49,23 +53,12 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
   }
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Nulstil password</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-  
-  <?php include 'css/css.html'; ?>
-</head>
-
-<body>
 
 <div class="row">
     <div class="presse-container container-fluid">
-       
+
         <div class="wrapper-form col-md-4 col-sm-8 col-xs-11" id="reset">
-    
+
 <div id="title-presse">
     <h1 id="presse-h1">Nulstil password</h1>
 </div>
@@ -77,9 +70,4 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
     <p class="link-area"><a href="login.php"><u>Tilbage til log ind</u></a></p>
     </form>
   </div>
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/index.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>
