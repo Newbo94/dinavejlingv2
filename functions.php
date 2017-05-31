@@ -73,6 +73,16 @@ function dinavejlingv2_widgets_init() {
 'after_title' => '</h3>',
 ) );
 
+register_sidebar( array(
+'name' => 'page Sidebar 1',
+'id' => 'page-sidebar-1',
+'description' => 'Appears in the blog area',
+'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+'after_widget' => '</aside>',
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
+
 }
 
 add_action('widgets_init', 'dinavejlingv2_widgets_init');

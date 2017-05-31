@@ -262,51 +262,31 @@ background-position: center;
     object-fit: cover;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
 }
-
-
-/* Single page - sektion 4 */
-.single_fourthsection {
-    background-color: #ffffff;
+/* Single page - sektion 3 Newsletter */
+.newsletter_section{
+  width: 100%;
+ height:auto;
+  padding: 5% 0 5% 0;
 }
 
-.single_fourthcontent {
-    padding: 48px 0
+.wrap_newsletter{
+
+
+}
+.newsletter_tekst h2 p{
+  color: #fff;
+  padding-bottom:10px;
 }
 
-.single_moreoverskrift {
-    font-weight: bold;
-    font-size: 17px;
-    color: #555555;
-    text-align: center;
-    margin-bottom: 25px;
-}
 
-.single_more {
-    margin: 18px 5px 30px 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    padding: 25px 45px;
-    background-color: #D5CCC4;
+.news_overlay {
+    height: auto;
+    background-color: rgba(85, 85, 85, 0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.single_more a {
-    text-decoration: none;
-}
-
-.single_more a:hover > h3 {
-    text-decoration: none;
-    color: #9C2A29;
-}
-
-.single_more h3 {
-    text-align: center;
-    color: #ffffff;
-}
-
-.single_more p {
-    color: #ffffff;
-    font-weight: 100;
-}
-
 
 
 
