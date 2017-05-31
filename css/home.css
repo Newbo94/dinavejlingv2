@@ -114,6 +114,17 @@ align-items: center;
 }
 
 
+.main-logo img {
+  margin-top: 10%;
+width: 350px;
+}
+
+@media only screen and (max-width: 900px){
+  .main-logo img {
+    margin-top: 50%;
+  }
+}
+
 
 @media only screen and (max-width: 900px) {
 .social_media_con{

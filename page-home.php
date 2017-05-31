@@ -21,18 +21,42 @@
   <!-- Wrapper til slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="   <?php the_field('image_slider_1'); ?>
-" alt="Dina vejling slider billede">
+      <?php
+
+  $image = get_field('image_slider_1');
+
+  if( !empty($image) ): ?>
+
+  	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+  <?php endif; ?>
+
     </div>
 
     <div class="item">
-      <img src="    <?php the_field('image_slider_2'); ?>
-" alt="Dina vejling slider billede">
+      <?php
+
+  $image = get_field('image_slider_2');
+
+  if( !empty($image) ): ?>
+
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+  <?php endif; ?>
+
     </div>
 
     <div class="item">
-      <img src="  <?php the_field('image_slider_3'); ?>
-" alt="Dina vejling slider billede">
+      <?php
+
+  $image = get_field('image_slider_3');
+
+  if( !empty($image) ): ?>
+
+    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+  <?php endif; ?>
+
     </div>
   </div>
 
@@ -55,8 +79,24 @@
 <h3> <?php  the_field('telefon_');?>  </h3>
 
 
-  <a href="https://www.facebook.com/Dina-Vejling-Dansk-kunsth%C3%A5ndv%C3%A6rk-361328902422/" target="_blank"> <img  class="front_social_media_img" src="<?php the_field('social_media_link_1'); ?>">  </a>
-  <a href="https://www.instagram.com/dinavejling/" target="_blank"><img  class="front_social_media_img" src="<?php the_field('social_media_link_2'); ?>" > </a>
+  <a href="https://www.facebook.com/Dina-Vejling-Dansk-kunsth%C3%A5ndv%C3%A6rk-361328902422/" target="_blank">   <?php
+
+$image = get_field('social_media_link_1');
+
+if( !empty($image) ): ?>
+
+  <img class="front_social_media_img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?>  </a>
+  <a href="https://www.instagram.com/dinavejling/" target="_blank"><?php
+
+$image = get_field('social_media_link_2');
+
+if( !empty($image) ): ?>
+
+  <img class="front_social_media_img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?> </a>
 
 </div>
 </div>
@@ -74,7 +114,16 @@
   <div class="row">
     <div class="col-sm-offset-2 col-md-3">
 <div class="main-logo">
-<img src="<?php the_field('home_header_logo'); ?>" alt="dina vejling logo ">
+  <?php
+
+$image = get_field('home_header_logo');
+
+if( !empty($image) ): ?>
+
+  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?>
+
 </div>
 </div>
 </div>

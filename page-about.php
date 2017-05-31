@@ -9,8 +9,20 @@
 <div class="single">
     <!-- FORSIDE SEKTION -->
     <div class="single_firstsection" style="background-image: url(<?php the_field('forside_img'); ?>);">
+
+
+
         <div class="butikken_overlay">
-            <img src="<?php the_field('logo'); ?>">
+          <?php
+
+    $image = get_field('logo');
+
+    if( !empty($image) ): ?>
+
+    	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+    <?php endif; ?>
+
         </div>
     </div>
 
@@ -20,12 +32,30 @@
         <div class="single_secondsection">
             <div class="single_imgleft">
                 <!-- Henter venstre billede til sektion 1, som tilføjes i Wordpress -->
-                <img src="<?php the_field('left_img'); ?>" alt="">
+                <?php
+
+            $image = get_field('left_img');
+
+            if( !empty($image) ): ?>
+
+            	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+            <?php endif; ?>
+
             </div>
 
             <div class="single_imgright">
                 <!-- Henter højre billede til sektion 1, som tilføjes i Wordpress -->
-                <img src="<?php the_field('right_img'); ?>" alt="">
+                <?php
+
+            $image = get_field('right_img');
+
+            if( !empty($image) ): ?>
+
+            	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+            <?php endif; ?>
+
             </div>
 
             <div class="single_boks1">
@@ -41,8 +71,8 @@
 
         <!-- SEKTION 2 -->
         <!-- Denne sektion sættes kun ind, hvis alle felter er udfyldt i Wordpress -->
-        <?php 
-        if(get_field('second_heading',$page->ID) != NULL && get_field('second_txt',$page->ID) != NULL && get_field('second_img',$page->ID) != NULL ){    
+        <?php
+        if(get_field('second_heading',$page->ID) != NULL && get_field('second_txt',$page->ID) != NULL && get_field('second_img',$page->ID) != NULL ){
         ?>
 
         <div class="single_thirdsection">
@@ -64,7 +94,16 @@
                     <div class="single_right">
                         <div class="single_img2">
                             <!-- Henter billede til sektion 2, som tilføjes i Wordpress -->
-                            <img src="<?php the_field('second_img'); ?>" alt="">
+                            <?php
+
+                        $image = get_field('second_img');
+
+                        if( !empty($image) ): ?>
+
+                        	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                        <?php endif; ?>
+
                         </div>
                     </div>
                 </div>
