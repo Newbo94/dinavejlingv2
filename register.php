@@ -139,7 +139,7 @@ mail( $to, $subject, $message_body );
 
           <button type="submit" class="button button-presse" name="register"/>Registrer</button>
 
-        <p class="link-area">Har du allerede et log ind? <br><a href="login.php"> <u>Tilbage til log ind side</u></a></p>
+        <p class="link-area">Har du allerede et log ind? <br><a href=“/login.php?page_id=189”> <u>Tilbage til log ind side</u></a></p>
 
           </form>
 

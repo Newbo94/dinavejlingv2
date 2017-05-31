@@ -67,7 +67,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' )
       <input placeholder="Email*" type="email"required autocomplete="off" name="email"/>
     </div>
     <button class="button button-presse"/>Nulstil</button>
-    <p class="link-area"><a href="login.php"><u>Tilbage til log ind</u></a></p>
+    <p class="link-area"><a href=“/login.php?page_id=189”><u>Tilbage til log ind</u></a></p>
     </form>
   </div>
 <?php get_footer(); ?>

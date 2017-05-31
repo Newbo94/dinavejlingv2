@@ -17,6 +17,13 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+
+.gallery_content {
+padding-top: 20%;
+}
+
+}
 
 
 

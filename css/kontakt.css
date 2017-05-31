@@ -40,7 +40,7 @@
     padding-top: 50px;
     text-align: center;
   }
-  
+
   .map_bund{
     padding-top: 20px;
   }
@@ -82,26 +82,29 @@
     box-shadow: 0 3px 6px 0px rgba(0,0, 0, 0.2);
   }
 
-  .presseform input {
+  .kontakt-form input {
     border: none;
     background: transparent;
     outline: none;
     width: 100%;
+    border-bottom: 1px solid #555555;
   }
 
-  .field-wrap {
-      position: relative;
-      resize:vertical;
-      max-height: 100px;
-      overflow-y: scroll;
-  }
 
-  .presseform textarea {
+
+.kontakt-field-wrap {
+    margin-top: 30px;
+}
+  .kontakt-form textarea {
     border: none;
     background: transparent;
     outline: none;
     width: 100%;
     height: 22px;
+    resize:vertical;
+    max-height: 100px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #555555;
   }
 
   .button {

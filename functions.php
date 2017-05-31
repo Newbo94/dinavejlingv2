@@ -10,15 +10,15 @@ wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min
 
 	wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/dinavejling.css', array(), '1.0.1', 'all');
 
-    wp_enqueue_style('headercss', get_template_directory_uri() . '/css/header.css', array(), '1.0.1', 'all');
+    wp_enqueue_style('headercss', get_template_directory_uri() . '/css/header.css', array(), '1.0.2', 'all');
 
     wp_enqueue_style('footercss', get_template_directory_uri() . '/css/footer.css', array(), '1.0.2', 'all');
 
     wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', array(), '1.0.2', 'all');
 
-		wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0.0', 'all');
+		wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css', array(), '1.0.2', 'all');
 
-		 wp_enqueue_style('kontakt', get_template_directory_uri() . '/css/kontakt.css', array(), '1.0.0', 'all');
+		 wp_enqueue_style('kontakt', get_template_directory_uri() . '/css/kontakt.css', array(), '1.0.1', 'all');
 		 wp_enqueue_style('gallery', get_template_directory_uri() . '/css/gallery.css', array(), '1.0.0', 'all');
 
 		 wp_enqueue_style('presscss', get_template_directory_uri() . '/css/presssite.css', array(), '1.0.1', 'all');
@@ -32,7 +32,7 @@ wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min
 
 
 	wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.4', true);
-	wp_enqueue_script('customjs', get_template_directory_uri() . '/js/dinavejling.js', array(), '1.0.1', true);
+	wp_enqueue_script('customjs', get_template_directory_uri() . '/js/dinavejling.js', array(), '1.0.2', true);
 
 }
 
@@ -76,6 +76,17 @@ function dinavejlingv2_widgets_init() {
 }
 
 add_action('widgets_init', 'dinavejlingv2_widgets_init');
+
+
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 
 /*
 	==========================================

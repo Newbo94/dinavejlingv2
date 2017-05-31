@@ -39,7 +39,7 @@ else { // User exists
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;
 
-        header("location: profile.php");
+        header("location: http://localhost:8888/wordpressdb/profile/");
 
     }
     else {
@@ -71,14 +71,14 @@ else { // User exists
 
           <div class="field-wrap">
             <input placeholder="Password" type="password" required autocomplete="off" name="password"/>
-             <p class="forgot"><a href="forgot.php">Har du glemt dit password?</a></p>
+             <p class="forgot"><a href=“/forgot.php?page_id=197”>Har du glemt dit password?</a></p>
           </div>
 
 
 
           <button class="button button-presse" name="login" />LOG PÅ</button>
 
-           <p class="link-area">Ønsker du tilgang til Dina Vejling presse? <a href="register.php"><u>Registrer her</u></a></p>
+           <p class="link-area">Ønsker du tilgang til Dina Vejling presse? <a href=“/register.php?page_id=191”><u>Registrer her</u></a></p>
 
           </form>
 

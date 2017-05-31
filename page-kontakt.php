@@ -36,15 +36,15 @@
 
             <div class="kontakt_form col-md-4 col-sm-8 col-xs-10 kontakt_bund">
 
-                <form class="presseform" action="index.php#kontakt" method="POST">
+                <form class="kontakt-form" action="index.php#kontakt" method="POST">
 
-                    <input class="field-wrap" type="hidden" name="action" value="submit">
-                    <input class="field-wrap" type="text" name="name" placeholder="Dit navn" required="required">
-                    <hr class="kontakt_hr" align="left"><br>
-                    <input class="field-wrap" type="email" name="email" placeholder="Din e-mail" required="required">
-                    <hr class="kontakt_hr" align="left"><br>
-                    <textarea class="field-wrap" name="message" placeholder="Din besked" required="required"></textarea>
-                    <hr class="kontakt_hr" align="left"><br>
+                    <input class="kontakt-field-wrap" type="hidden" name="action" value="submit">
+                    <input class="kontakt-field-wrap" type="text" name="name" placeholder="Dit navn" required="required">
+            
+                    <input class="kontakt-field-wrap" type="email" name="email" placeholder="Din e-mail" required="required">
+
+                    <textarea class="kontakt-field-wrap" name="message" placeholder="Din besked" required="required"></textarea>
+
                     <button class="button" type="submit" value="Send email">Send besked<i aria-hidden="true"></i></button>
 
                 </form>

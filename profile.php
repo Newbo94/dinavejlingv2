@@ -50,9 +50,9 @@ else {
           <h2><?php echo $first_name.' '.$last_name; ?></h2>
           <p><?= $email ?></p>
 
-          <a href="presseside.php"><button class="button button-presse" name="presseside"/>Presseside</button></a>
+          <a href=“/pressesite.php?page_id=185”><button class="button button-presse" name="presseside"/>Presseside</button></a>
 
-          <a href="logout.php"><button class="button button-presse" name="logout"/>Log ud</button></a>
+          <a href=“/logout.php?page_id=199”><button class="button button-presse" name="logout"/>Log ud</button></a>
 
         </div>
       </div>

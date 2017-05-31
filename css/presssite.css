@@ -41,14 +41,6 @@ a:hover {
   color: #9C2A29;
 }
 
-hr{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #9C2A29;
-    margin: 1em 0;
-    padding: 0;
-}
 
 .presse-container{
 height: 100vh;
